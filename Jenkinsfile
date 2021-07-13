@@ -8,11 +8,11 @@ node {
 	stage('Integraiton Test') {
 		echo "Test"
 	}
-	stage('Package') {
-		steps {
-			sh "mvn package -DskipTests"
-		}
-	}
+	//stage('Package') {
+	//	steps {
+	//		sh "mvn package -DskipTests"
+	//	}
+	//}
 	stage('Build Docker image') {
 		steps {
 	//primitive or declarative method "docker build -t in28min/currency-exchange-devops:$env.BUILD_TAG"	
