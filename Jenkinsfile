@@ -1,6 +1,5 @@
 pipeline			//In declarative pipeline you have to put all in stages
 	{	
-	#agent any		//where a build is going to run
 	agent { docker { image 'maven:3.8.1'} }       //this is how you use docker in agents. Can be java or nodejs 
 	stages {
 		stage('Build') {
