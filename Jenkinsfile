@@ -20,6 +20,7 @@ node {
 				dockerImage = docker.build("sunilbalu/hello-world-python:${env.BUILD_TAG}")	
 	}
 	}
+	}
 	stage('Push Docker image') {
 		steps {
 			script {
